@@ -5,7 +5,7 @@
 ## 📌 About the Repository
 
 This repository serves as a personal archive of my problem-solving journey across various competitive programming platforms.  
-Its main purposes are:
+aims to:
 
 - To showcase my coding and problem-solving skills from one central place.
 - To keep my solutions well-organized and easy to revisit in the future.
@@ -32,8 +32,6 @@ Each problem folder typically contains a clean implementation, and in most cases
 
 ---
 
-
-
 ## 📊 Progress Tracking
 
 This section tracks problems with available code and their current status.  
@@ -45,7 +43,7 @@ This section tracks problems with available code and their current status.
 | Beautiful Matrix | 800 | Solved | C++ |
 | Bit++ | 800 | Solved | C++ |
 | Domino piling | 800 | Solved | C++ |
-| Helpful Maths | 800 | Not Solved | C++ |
+| Helpful Maths | 800 | Unsolved | C++ |
 | Next Round | 800 | Solved | C++ |
 | Petya and Strings | 800 | Solved | C++ |
 | Team | 800 | Solved | C++ |
