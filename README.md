@@ -37,7 +37,6 @@ Each problem folder typically contains a clean implementation, and in most cases
 ## 📊 Progress Tracking
 
 This section tracks problems with available code and their current status.  
-✅ = Fully solved | ⚠️ = Has code but not solved yet
 
 ### Codeforces
 
