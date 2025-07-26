@@ -1,120 +1,76 @@
-# Problem Solving
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Language](https://img.shields.io/badge/language-C++-brightgreen)
+# [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/description/?envType=study-plan-v2&envId=leetcode-75)
 
-## 📌 About the Repository
-
-This repository serves as a personal archive of my problem-solving journey across various competitive programming platforms.  
-aims to:
-
-- To showcase my coding and problem-solving skills from one central place.
-- To keep my solutions well-organized and easy to revisit in the future.
-- To help others searching for explanations or approaches to specific problems I’ve already solved.
-- To act as a personal reference with written breakdowns of solutions I may forget over time.
-
-Each problem folder typically contains a clean implementation, and in most cases, an explanation written in its own `README.md`.
+> **Platform:** LeetCode  
+> **Difficulty:** Easy  
+> **Tags:** String, Two Pointers, Simulation  
+> **Status:** Solved  
 
 ---
 
-## ⚙️ Languages & Tools
+## Problem Description
 
-- **Main Language:** C++
-- **Editor:** Visual Studio Code  
-
----
-
-## 📝 Problem Format & Naming
-
-- Each problem is placed in its own folder under the relevant platform.
-- File names match the problem title to improve readability and searchability.
-- Each solution file may include a comment with the problem link (in future updates).
-- The individual problem's `README.md` file explains the logic and thought process behind the solution.
+Given two input strings word1 and word2, your task is to construct a new string by merging them alternately, starting with a character from word1. Once one of the strings is exhausted, append all remaining characters from the longer string to the end.
+Return the resulting merged string.
+(Constraints: lengths up to 100, lowercase letters only.) 
 
 ---
 
-## 📊 Progress Tracking
+## Example
 
-This section tracks problems with available code and their current status.  
+**Input:**
+word1 = "abc"
+word2 = "pqr"
 
-### Codeforces
+**Output:**
+"apbqcr"
 
-| Problem | difficulty | Status | Language |
-|--------|----------|--------|----------|
-| Beautiful Matrix | 800 | Solved | C++ |
-| Bit++ | 800 | Solved | C++ |
-| Domino piling | 800 | Solved | C++ |
-| Helpful Maths | 800 | Unsolved | C++ |
-| Next Round | 800 | Solved | C++ |
-| Petya and Strings | 800 | Solved | C++ |
-| Team | 800 | Solved | C++ |
-| Theatre Square | 800 | Solved | C++ |
-| Watermelon | 800 | Solved | C++ |
-| Way Too Long Words | 800 | Solved | C++ |
+**Explanation:**
+- Take 'a' from `word1` and 'p' from `word2` → "ap"
+- Take 'b' and 'q' → "apbq"
+- Take 'c' and 'r' → "apbqcr"
 
 ---
 
-## 🧠 Notes & Future Improvements
+## Approach
 
-- Some early solutions may need optimization or cleaner structure.
-- Over time, I plan to improve code readability and add explanations to all existing solutions.
-- This is a personal archive, but feel free to fork or clone it for educational purposes.
+### Solution Code (C++)
+```Cpp
+class Solution {
+public:
+    string mergeAlternately(string word1, string word2) {
+        string result;
+        int len;
+        if (word1.length() > word2.length())
+            len = word1.length();
+        else
+            len = word2.length();
+        for (int i = 0; i < len; i++) {
+            if(i < word1.length())
+                result += word1[i];
+            if(i < word2.length())
+                result += word2[i];
+        }
+        return result;
+    }
+};
+```
+## Explanation:
 
-**Profiles:**  
-🔗 [Codeforces](https://codeforces.com/profile/YOUR_USERNAME)  
-🔗 [LeetCode](https://leetcode.com/YOUR_USERNAME/)
+1. Determine `len` as the maximum of the two string lengths.
 
----
+2. Loop from `i = 0` to `< len`:
+   - If `word1` still has characters at index `i`, append `word1[i]` to the `result`.
+   - If `word2` still has characters at index `i`, append `word2[i]` to the `result`.
 
-## 📁 Repository Structure
+3. This approach naturally handles different string lengths without additional logic or branching.
 
-The repository is organized by platform. Each platform has its own directory, and inside it, every problem is placed in a dedicated folder:
+This is a clean and effective **two-pointer simulation**, where `i` acts as a shared pointer traversing both strings.
 
-<pre>
-ProblemSolving/
-├── Codeforces/
-│   ├── Beautiful Matrix/
-│   |   ├── Beautiful Matrix.cpp
-│   |   └── README.md
-│   ├── Bit++/
-│   |   ├── Bit++.cpp
-│   |   └── README.md
-│   ├── Domino piling/
-│   |   ├── Domino piling.cpp
-│   |   └── README.md
-│   ├── Helpful Maths/
-│   |   ├── Helpful Maths.cpp
-│   |   └── README.md
-│   ├── Next Round/
-│   |   ├── Next Round.cpp
-│   |   └── README.md
-│   ├── Petya and Strings/
-│   |   ├── Petya and Strings.cpp
-│   |   └── README.md
-│   ├── Team/
-│   |   ├── Team.cpp
-│   |   └── README.md
-│   ├── Theatre Square/
-│   |   ├── Theatre Square.cpp
-│   |   └── README.md
-│   ├── Watermelon/
-│   |   ├── Watermelon.cpp
-│   |   └── README.md
-│   └── Way Too Long Words/
-│       ├── Way Too Long Words.cpp
-│       └── README.md
-├── LeetCode/
-├── LICENSE
-└── README.md
-</pre>
+## Complexity Analysis
 
-> Each folder contains:
-> - `Problem_Name.cpp` → Clean solution file written in C++
-> - `README.md` → Problem explanation, approach, or notes in my own words
+- **Time Complexity:** O(m + n), where `m = word1.length()` and `n = word2.length()`.  
+  We iterate through up to the longer of the two strings, and each operation (appending a character) is done in constant time.
+
+- **Space Complexity:** O(m + n), because we're constructing a new string that includes all characters from both `word1` and `word2`.
 
 ---
-
-
-## 📜 License
-
-This repository is licensed under the [MIT License](LICENSE).
-You are free to use, share, and modify the content with proper attribution.
