@@ -14,10 +14,6 @@ aims to:
 
 Each problem folder typically contains a clean implementation, and in most cases, an explanation written in its own `README.md`.
 
-**Profiles:**  
-[Codeforces](https://codeforces.com/profile/deehaw)  
-[LeetCode](https://leetcode.com/u/Waheed7000/)
-
 ---
 
 ## ⚙️ Languages & Tools
@@ -40,26 +36,20 @@ Each problem folder typically contains a clean implementation, and in most cases
 
 This section tracks problems with available code and their current status.  
 
-### LeetCode
-
-| Problem | Difficulty | Status | Language | README |
-|---------|------------|--------|----------|--------|
-| [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/description/?envType=study-plan-v2&envId=leetcode-75) | Easy | Solved | C++ | [View](/LeetCode/LeetCode%2075/Merge%20Strings%20Alternately/README.md) |
-
 ### Codeforces
 
-| Problem | difficulty | Status | Language | Explanation |
-|---------|------------|--------|----------|-------------|
-| [Beautiful Matrix](https://codeforces.com/problemset/problem/263/A) | 800 | Solved | C++ | -- |
-| [Bit++](https://codeforces.com/problemset/problem/282/A) | 800 | Solved | C++ | -- |
-| [Domino piling](https://codeforces.com/problemset/problem/50/A) | 800 | Solved | C++ | -- |
-| [Helpful Maths](https://codeforces.com/problemset/problem/339/A) | 800 | Unsolved | C++ | -- |
-| [Next Round](https://codeforces.com/problemset/problem/158/A) | 800 | Solved | C++ | -- |
-| [Petya and Strings](https://codeforces.com/problemset/problem/112/A) | 800 | Solved | C++ | -- |
-| [Team](https://codeforces.com/problemset/problem/231/A) | 800 | Solved | C++ | -- |
-| [Theatre Square](https://codeforces.com/problemset/problem/1/A) | 800 | Solved | C++ | -- |
-| [Watermelon](https://codeforces.com/problemset/problem/4/A) | 800 | Solved | C++ | [View](../Codeforces/Beautiful%20Matrix/README.md) |
-| [Way Too Long Words](https://codeforces.com/problemset/problem/71/A)| 800 | Solved | C++ | -- |
+| Problem | difficulty | Status | Language |
+|--------|----------|--------|----------|
+| Beautiful Matrix | 800 | Solved | C++ |
+| Bit++ | 800 | Solved | C++ |
+| Domino piling | 800 | Solved | C++ |
+| Helpful Maths | 800 | Unsolved | C++ |
+| Next Round | 800 | Solved | C++ |
+| Petya and Strings | 800 | Solved | C++ |
+| Team | 800 | Solved | C++ |
+| Theatre Square | 800 | Solved | C++ |
+| Watermelon | 800 | Solved | C++ |
+| Way Too Long Words | 800 | Solved | C++ |
 
 ---
 
@@ -68,6 +58,10 @@ This section tracks problems with available code and their current status.
 - Some early solutions may need optimization or cleaner structure.
 - Over time, I plan to improve code readability and add explanations to all existing solutions.
 - This is a personal archive, but feel free to fork or clone it for educational purposes.
+
+**Profiles:**  
+🔗 [Codeforces](https://codeforces.com/profile/YOUR_USERNAME)  
+🔗 [LeetCode](https://leetcode.com/YOUR_USERNAME/)
 
 ---
 
