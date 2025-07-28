@@ -58,7 +58,7 @@ This section tracks problems with available code and their current status.
 | [Petya and Strings](https://codeforces.com/problemset/problem/112/A) | 800 | Solved | C++ | -- |
 | [Team](https://codeforces.com/problemset/problem/231/A) | 800 | Solved | C++ | -- |
 | [Theatre Square](https://codeforces.com/problemset/problem/1/A) | 800 | Solved | C++ | -- |
-| [Watermelon](https://codeforces.com/problemset/problem/4/A) | 800 | Solved | C++ | [View](../Codeforces/Beautiful%20Matrix/README.md) |
+| [Watermelon](https://codeforces.com/problemset/problem/4/A) | 800 | Solved | C++ | [View](/CodeForce/Watermelon/README.md) |
 | [Way Too Long Words](https://codeforces.com/problemset/problem/71/A)| 800 | Solved | C++ | -- |
 
 ---
@@ -77,7 +77,7 @@ The repository is organized by platform. Each platform has its own directory, an
 
 <pre>
 ProblemSolving/
-├── Codeforces/
+├── CodeForce/
 │   ├── Beautiful Matrix/
 │   |   ├── Beautiful Matrix.cpp
 │   |   └── README.md

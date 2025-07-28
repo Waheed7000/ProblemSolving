@@ -18,11 +18,14 @@ Return the resulting merged string.
 ## Example
 
 **Input:**
-word1 = "abc"
-word2 = "pqr"
+
+`word1 = "abc"`
+
+`word2 = "pqr"`
 
 **Output:**
-"apbqcr"
+
+`"apbqcr"`
 
 **Explanation:**
 - Take 'a' from `word1` and 'p' from `word2` → "ap"

@@ -1,116 +1,68 @@
-# Problem Solving
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Language](https://img.shields.io/badge/language-C++-brightgreen)
+# [Watermelon](https://codeforces.com/problemset/problem/4/A)
 
-## 📌 About the Repository
-
-This repository serves as a personal archive of my problem-solving journey across various competitive programming platforms.  
-aims to:
-
-- To showcase my coding and problem-solving skills from one central place.
-- To keep my solutions well-organized and easy to revisit in the future.
-- To help others searching for explanations or approaches to specific problems I’ve already solved.
-- To act as a personal reference with written breakdowns of solutions I may forget over time.
-
-Each problem folder typically contains a clean implementation, and in most cases, an explanation written in its own `README.md`.
+> **Platform:** Codeforces  
+> **Difficulty:** 800  
+> **Tags:** Math, Brute Force, Implementation  
+> **Status:** Solved  
 
 ---
 
-## ⚙️ Languages & Tools
+## Problem Description
 
-- **Main Language:** C++
-- **Editor:** Visual Studio Code  
+You are given an integer `w` representing the weight of a watermelon. Your task is to determine whether it's possible to split the watermelon into two parts such that:
+- Each part has a positive even weight, and
+- The sum of the two parts equals `w`
 
----
-
-## 📝 Problem Format & Naming
-
-- Each problem is placed in its own folder under the relevant platform.
-- File names match the problem title to improve readability and searchability.
-- Each solution file may include a comment with the problem link (in future updates).
-- The individual problem's `README.md` file explains the logic and thought process behind the solution.
+Return **"YES"** if it's possible, otherwise return **"NO"**.
 
 ---
 
-## 📊 Progress Tracking
+## Example
 
-This section tracks problems with available code and their current status.  
+**Input:**
 
-### Codeforces
+`w = 8`
 
-| Problem | difficulty | Status | Language |
-|--------|----------|--------|----------|
-| Beautiful Matrix | 800 | Solved | C++ |
-| Bit++ | 800 | Solved | C++ |
-| Domino piling | 800 | Solved | C++ |
-| Helpful Maths | 800 | Unsolved | C++ |
-| Next Round | 800 | Solved | C++ |
-| Petya and Strings | 800 | Solved | C++ |
-| Team | 800 | Solved | C++ |
-| Theatre Square | 800 | Solved | C++ |
-| Watermelon | 800 | Solved | C++ |
-| Way Too Long Words | 800 | Solved | C++ |
+**Output:**
+
+`YES`
+
+**Explanation:**
+- One possible valid split is: 4 and 4.
+- Both numbers are positive even integers, and their sum is 8.
+- So the output is `"YES"`.
 
 ---
 
-## 🧠 Notes & Future Improvements
+## Approach
 
-- Some early solutions may need optimization or cleaner structure.
-- Over time, I plan to improve code readability and add explanations to all existing solutions.
-- This is a personal archive, but feel free to fork or clone it for educational purposes.
+### Solution Code (C++)
+```Cpp
+int main() {
+    int w;
+    cin >> w;
+    if (2 < w && w % 2 == 0)
+        cout << "YES" << endl;
+    else
+        cout << "NO" << endl;
+}
+```
+## Explanation:
 
----
+1. We first read the input integer `w`.
 
-## 📁 Repository Structure
+2. We check two conditions:
+    - Is `w` greater than 2? (because 2 cannot be split into two positive even numbers)
+    - Is `w` divisible by 2? (only even numbers can be split into two even integers)
 
-The repository is organized by platform. Each platform has its own directory, and inside it, every problem is placed in a dedicated folder:
+3. If both are true → print **"YES"**, otherwise print **"NO"**.
 
-<pre>
-ProblemSolving/
-├── Codeforces/
-│   ├── Beautiful Matrix/
-│   |   ├── Beautiful Matrix.cpp
-│   |   └── README.md
-│   ├── Bit++/
-│   |   ├── Bit++.cpp
-│   |   └── README.md
-│   ├── Domino piling/
-│   |   ├── Domino piling.cpp
-│   |   └── README.md
-│   ├── Helpful Maths/
-│   |   ├── Helpful Maths.cpp
-│   |   └── README.md
-│   ├── Next Round/
-│   |   ├── Next Round.cpp
-│   |   └── README.md
-│   ├── Petya and Strings/
-│   |   ├── Petya and Strings.cpp
-│   |   └── README.md
-│   ├── Team/
-│   |   ├── Team.cpp
-│   |   └── README.md
-│   ├── Theatre Square/
-│   |   ├── Theatre Square.cpp
-│   |   └── README.md
-│   ├── Watermelon/
-│   |   ├── Watermelon.cpp
-│   |   └── README.md
-│   └── Way Too Long Words/
-│       ├── Way Too Long Words.cpp
-│       └── README.md
-├── LeetCode/
-├── LICENSE
-└── README.md
-</pre>
+## Complexity Analysis
 
-> Each folder contains:
-> - `Problem_Name.cpp` → Clean solution file written in C++
-> - `README.md` → Problem explanation, approach, or notes in my own words
+- **Time Complexity:** `O(1)`
+Just a single input read and one if-check. Constant time.
+
+- **Space Complexity:** `O(1)`
+No extra space is used beyond a single integer.
 
 ---
-
-
-## 📜 License
-
-This repository is licensed under the [MIT License](LICENSE).
-You are free to use, share, and modify the content with proper attribution.
